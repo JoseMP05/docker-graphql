@@ -26,4 +26,4 @@ jobs:
       run: docker build . --file Dockerfile --tag josemp05/docker-graphql:0.0.2
 
     - name: Push Image
-      run: docker push josemp05/docker-graphql:0.0.2 .
+      run: docker push josemp05/docker-graphql:0.0.2
