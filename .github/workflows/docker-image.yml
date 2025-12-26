@@ -30,7 +30,7 @@ jobs:
       env:
         DOCKER_USER: ${{secrets.DOCKER_USER}}
         DOCKER_PASSWORD: ${{secrets.DOCKERHUB_ACCESS_TOKEN}}
-        NEW_VERSION: ${{stepts.version.outputs.version}}
+        NEW_VERSION: ${{steps.version.outputs.version}}
       run: |
         docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
         echo "=========$NEW_VERSION==========="
